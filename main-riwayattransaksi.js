@@ -143,16 +143,3 @@ const firebaseConfig = {
   measurementId: "G-PM3T1L05JS"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-function simpanKeFirebase(transaksi) {
-  db.collection("transaksiTakoyaki").add(transaksi)
-    .then(() => {
-      console.log("Transaksi berhasil disimpan ke Firebase.");
-    })
-    .catch((error) => {
-      console.error("Gagal menyimpan transaksi:", error);
-    });
-}
