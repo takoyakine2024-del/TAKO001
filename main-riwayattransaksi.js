@@ -137,9 +137,35 @@ const firebaseConfig = {
   apiKey: "AIzaSyAymJgXOk_4zyK-7NfWdSDEvJaBIWW4uGo",
   authDomain: "takoyaki001-55b88.firebaseapp.com",
   projectId: "takoyaki001-55b88",
-  storageBucket: "takoyaki001-55b88.firebasestorage.app",
+  storageBucket: "takoyaki001-55b88.appspot.com",
   messagingSenderId: "81459383590",
   appId: "1:81459383590:web:ae4089b9e169cd840705e7",
   measurementId: "G-PM3T1L05JS"
 };
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+function ambilDariFirebase() {
+  db.collection("transaksiTakoyaki").get()
+    .then((querySnapshot) => {
+      data = [];
+      querySnapshot.forEach((doc) => {
+        data.push(doc.data());
+      });
+   ambilDariFirebase();
+    })
+    .catch((error) => {
+      console.error("Gagal mengambil data:", error);
+    });
+}
+function simpanKeFirebase(transaksi) {
+  db.collection("transaksiTakoyaki").add(transaksi)
+    .then(() => {
+      console.log("Transaksi berhasil disimpan ke Firebase.");
+    })
+    .catch((error) => {
+      console.error("Gagal menyimpan transaksi:", error);
+    });
+}
+
 
