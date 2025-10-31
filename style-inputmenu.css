@@ -1,0 +1,123 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffbe6;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffd700;
+      color: #333;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    header img {
+      height: 80px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    h2 {
+      color: #ffb300;
+      border-bottom: 2px solid #ffb300;
+      padding-bottom: 5px;
+    }
+
+    .menu, .addon {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .qty-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .qty-controls button {
+      background-color: #ffb300;
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 4px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .qty-controls span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .qty-controls button:hover {
+      background-color: #ffa000;
+    }
+
+    .cart, .payment {
+      margin-top: 30px;
+    }
+
+    .cart-item {
+      margin: 5px 0;
+    }
+
+    .payment button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .payment button:hover {
+      background-color: #45a049;
+    }
+
+    .total {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+#toggleAddonBtn {
+  background-color: #ffb300; /* Hijau segar */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggleAddonBtn:hover {
+  background-color: #ffb300;
+}
+
+#toggleAddonBtn {
+  margin: 10px auto;
+  display: block;
+}

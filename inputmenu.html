@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="css/style-inputmenu.css">
+  <meta charset="UTF-8">
+  <title>Kasir - TAKOYAKI NE</title>
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo.png" alt="TAKOYAKI NE">
+    <h1>TAKOYAKI NE</h1>
+    <p>Kasir: Lilik | Tanggal: <span id="tanggal"></span> | Jam: <span id="jam"></span></p>
+  </header>
+  <h2>MENU TAKOYAKI</h2>
+  <div class="menu">
+    <div class="product"><p>Sosis - Small</p><p>Rp12.000</p><div class="qty-controls"><button onclick="decreaseItem('Sosis-Small')">-</button><span id="qty-Sosis-Small">0</span><button onclick="increaseItem('Sosis-Small', 12000)">+</button></div></div>
+    <div class="product"><p>Sosis - Medium</p><p>Rp17.000</p><div class="qty-controls"><button onclick="decreaseItem('Sosis-Medium')">-</button><span id="qty-Sosis-Medium">0</span><button onclick="increaseItem('Sosis-Medium', 17000)">+</button></div></div>
+    <div class="product"><p>Sosis - Large</p><p>Rp22.000</p><div class="qty-controls"><button onclick="decreaseItem('Sosis-Large')">-</button><span id="qty-Sosis-Large">0</span><button onclick="increaseItem('Sosis-Large', 22000)">+</button></div></div>
+    
+    <div class="product"><p>Beef - Small</p><p>Rp12.000</p><div class="qty-controls"><button onclick="decreaseItem('Beef-Small')">-</button><span id="qty-Beef-Small">0</span><button onclick="increaseItem('Beef-Small', 12000)">+</button></div></div>
+    <div class="product"><p>Beef - Medium</p><p>Rp17.000</p><div class="qty-controls"><button onclick="decreaseItem('Beef-Medium')">-</button><span id="qty-Beef-Medium">0</span><button onclick="increaseItem('Beef-Medium', 17000)">+</button></div></div>
+    <div class="product"><p>Beef - Large</p><p>Rp22.000</p><div class="qty-controls"><button onclick="decreaseItem('Beef-Large')">-</button><span id="qty-Beef-Large">0</span><button onclick="increaseItem('Beef-Large', 22000)">+</button></div></div>
+
+    <div class="product"><p>Crabstick - Small</p><p>Rp12.000</p><div class="qty-controls"><button onclick="decreaseItem('Crabstick-Small')">-</button><span id="qty-Crabstick-Small">0</span><button onclick="increaseItem('Crabstick-Small', 12000)">+</button></div></div>
+    <div class="product"><p>Carbstick - Medium</p><p>Rp17.000</p><div class="qty-controls"><button onclick="decreaseItem('Crabstick-Medium')">-</button><span id="qty-Crabstick-Medium">0</span><button onclick="increaseItem('Crabstick-Medium', 17000)">+</button></div></div>
+    <div class="product"><p>Crabstick - Large</p><p>Rp22.000</p><div class="qty-controls"><button onclick="decreaseItem('Crabstick-Large')">-</button><span id="qty-Crabstick-Large">0</span><button onclick="increaseItem('Crabstick-Large', 22000)">+</button></div></div>
+
+    <div class="product"><p>Keju - Small</p><p>Rp14.000</p><div class="qty-controls"><button onclick="decreaseItem('Keju-Small')">-</button><span id="qty-Keju-Small">0</span><button onclick="increaseItem('Keju-Small', 14000)">+</button></div></div>
+    <div class="product"><p>Keju - Medium</p><p>Rp19.000</p><div class="qty-controls"><button onclick="decreaseItem('Keju-Medium')">-</button><span id="qty-Keju-Medium">0</span><button onclick="increaseItem('Keju-Medium', 19000)">+</button></div></div>
+    <div class="product"><p>Keju - Large</p><p>Rp26.000</p><div class="qty-controls"><button onclick="decreaseItem('Keju-Large')">-</button><span id="qty-Keju-Large">0</span><button onclick="increaseItem('Keju-Large', 26000)">+</button></div></div>
+
+    <div class="product"><p>Mozarella - Small</p><p>Rp14.000</p><div class="qty-controls"><button onclick="decreaseItem('Mozarella-Small')">-</button><span id="qty-Mozarella-Small">0</span><button onclick="increaseItem('Mozarella-Small', 14000)">+</button></div></div>
+    <div class="product"><p>Mozarella - Medium</p><p>Rp19.000</p><div class="qty-controls"><button onclick="decreaseItem('Mozarella-Medium')">-</button><span id="qty-Mozarella-Medium">0</span><button onclick="increaseItem('Mozarella-Medium', 19000)">+</button></div></div>
+    <div class="product"><p>Mozarella - Large</p><p>Rp26.000</p><div class="qty-controls"><button onclick="decreaseItem('Mozarella-Large')">-</button><span id="qty-Mozarella-Large">0</span><button onclick="increaseItem('Mozarella-Large', 26000)">+</button></div></div>
+
+    <div class="product"><p>Gurita - Small</p><p>Rp14.000</p><div class="qty-controls"><button onclick="decreaseItem('Gurita-Small')">-</button><span id="qty-Gurita-Small">0</span><button onclick="increaseItem('Gurita-Small', 14000)">+</button></div></div>
+    <div class="product"><p>Gurita - Medium</p><p>Rp19.000</p><div class="qty-controls"><button onclick="decreaseItem('Gurita-Medium')">-</button><span id="qty-Gurita-Medium">0</span><button onclick="increaseItem('Gurita-Medium', 19000)">+</button></div></div>
+    <div class="product"><p>Gurita - Large</p><p>Rp26.000</p><div class="qty-controls"><button onclick="decreaseItem('Gurita-Large')">-</button><span id="qty-Gurita-Large">0</span><button onclick="increaseItem('Gurita-Large', 26000)">+</button></div></div>
+
+    <div class="product"><p>Mix - Small</p><p>Rp14.000</p><div class="qty-controls"><button onclick="decreaseItem('Mix-Small')">-</button><span id="qty-Mix-Small">0</span><button onclick="increaseItem('Mix-Small', 14000)">+</button></div></div>
+    <div class="product"><p>Mix - Medium</p><p>Rp19.000</p><div class="qty-controls"><button onclick="decreaseItem('Mix-Medium')">-</button><span id="qty-Mix-Medium">0</span><button onclick="increaseItem('Mix-Medium', 19000)">+</button></div></div>
+    <div class="product"><p>Mix - Large</p><p>Rp26.000</p><div class="qty-controls"><button onclick="decreaseItem('Mix-Large')">-</button><span id="qty-Mix-Large">0</span><button onclick="increaseItem('Mix-Large', 26000)">+</button></div></div>
+  </div>
+
+  <button id="toggleAddonBtn">Tampilkan Tambah Isi</button>
+  <div id="addonContainer" class="addon" style="display: none;">
+  <h2>TAMBAH ISI</h2>
+
+
+  <div class="addon">
+    <div class="product"><p>Sosis - Small</p><p>Rp2.000</p><div class="qty-controls"><button onclick="decreaseAddon('Sosis-Small')">-</button><span id="addon-Sosis-Small">0</span><button onclick="increaseAddon('Sosis-Small', 2000)">+</button></div></div>
+    <div class="product"><p>Sosis - Medium</p><p>Rp3.000</p><div class="qty-controls"><button onclick="decreaseAddon('Sosis-Medium')">-</button><span id="addon-Sosis-Medium">0</span><button onclick="increaseAddon('Sosis-Medium', 3000)">+</button></div></div>
+    <div class="product"><p>Sosis - Large</p><p>Rp5.000</p><div class="qty-controls"><button onclick="decreaseAddon('Sosis-Large')">-</button><span id="addon-Sosis-Large">0</span><button onclick="increaseAddon('Sosis-Large', 5000)">+</button></div></div>
+
+    <div class="product"><p>Beef - Small</p><p>Rp2.000</p><div class="qty-controls"><button onclick="decreaseAddon('Beef-Small')">-</button><span id="addon-Beef-Small">0</span><button onclick="increaseAddon('Beef-Small', 2000)">+</button></div></div>
+    <div class="product"><p>Beef - Medium</p><p>Rp3.000</p><div class="qty-controls"><button onclick="decreaseAddon('Beef-Medium')">-</button><span id="addon-Beef-Medium">0</span><button onclick="increaseAddon('Beef-Medium', 3000)">+</button></div></div>
+    <div class="product"><p>Beef - Large</p><p>Rp5.000</p><div class="qty-controls"><button onclick="decreaseAddon('Beef-Large')">-</button><span id="addon-Beef-Large">0</span><button onclick="increaseAddon('Beef-Large', 5000)">+</button></div></div>
+
+    <div class="product"><p>Crabstick - Small</p><p>Rp2.000</p><div class="qty-controls"><button onclick="decreaseAddon('Crabstick-Small')">-</button><span id="addon-Crabstick-Small">0</span><button onclick="increaseAddon('Crabstick-Small', 2000)">+</button></div></div>
+    <div class="product"><p>Crabstick - Medium</p><p>Rp3.000</p><div class="qty-controls"><button onclick="decreaseAddon('Crabstick-Medium')">-</button><span id="addon-Crabstick-Medium">0</span><button onclick="increaseAddon('Crabstick-Medium', 3000)">+</button></div></div>
+    <div class="product"><p>Crabstick - Large</p><p>Rp5.000</p><div class="qty-controls"><button onclick="decreaseAddon('Crabstick-Large')">-</button><span id="addon-Crabstick-Large">0</span><button onclick="increaseAddon('Crabstick-Large', 5000)">+</button></div></div>
+
+    <div class="product"><p>Keju - Small</p><p>Rp2.000</p><div class="qty-controls"><button onclick="decreaseAddon('Keju-Small')">-</button><span id="addon-Keju-Small">0</span><button onclick="increaseAddon('Keju-Small', 2000)">+</button></div></div>
+    <div class="product"><p>Keju - Medium</p><p>Rp3.000</p><div class="qty-controls"><button onclick="decreaseAddon('Keju-Medium')">-</button><span id="addon-Keju-Medium">0</span><button onclick="increaseAddon('Keju-Medium', 3000)">+</button></div></div>
+    <div class="product"><p>Keju - Large</p><p>Rp5.000</p><div class="qty-controls"><button onclick="decreaseAddon('Keju-Large')">-</button><span id="addon-Keju-Large">0</span><button onclick="increaseAddon('Keju-Large', 5000)">+</button></div></div>
+
+    <div class="product"><p>Mozarella - Small</p><p>Rp2.000</p><div class="qty-controls"><button onclick="decreaseAddon('Mozarella-Small')">-</button><span id="addon-Mozarella-Small">0</span><button onclick="increaseAddon('Mozarella-Small', 2000)">+</button></div></div>
+    <div class="product"><p>Mozarella - Medium</p><p>Rp3.000</p><div class="qty-controls"><button onclick="decreaseAddon('Mozarella-Medium')">-</button><span id="addon-Mozarella-Medium">0</span><button onclick="increaseAddon('Mozarella-Medium', 3000)">+</button></div></div>
+    <div class="product"><p>Mozarella - Large</p><p>Rp5.000</p><div class="qty-controls"><button onclick="decreaseAddon('Mozarella-Large')">-</button><span id="addon-Mozarella-Large">0</span><button onclick="increaseAddon('Mozarella-Large', 5000)">+</button></div></div>
+
+    <div class="product"><p>Gurita - Small</p><p>Rp2.000</p><div class="qty-controls"><button onclick="decreaseAddon('Gurita-Small')">-</button><span id="addon-Gurita-Small">0</span><button onclick="increaseAddon('Gurita-Small', 2000)">+</button></div></div>
+    <div class="product"><p>Gurita - Medium</p><p>Rp3.000</p><div class="qty-controls"><button onclick="decreaseAddon('Gurita-Medium')">-</button><span id="addon-Gurita-Medium">0</span><button onclick="increaseAddon('Gurita-Medium', 3000)">+</button></div></div>
+    <div class="product"><p>Gurita - Large</p><p>Rp5.000</p><div class="qty-controls"><button onclick="decreaseAddon('Gurita-Large')">-</button><span id="addon-Gurita-Large">0</span><button onclick="increaseAddon('Gurita-Large', 5000)">+</button></div></div>
+
+    <div class="product"><p>Mix - Small</p><p>Rp2.000</p><div class="qty-controls"><button onclick="decreaseAddon('Mix-Small')">-</button><span id="addon-Mix-Small">0</span><button onclick="increaseAddon('Mix-Small', 2000)">+</button></div></div>
+    <div class="product"><p>Mix - Medium</p><p>Rp3.000</p><div class="qty-controls"><button onclick="decreaseAddon('Mix-Medium')">-</button><span id="addon-Mix-Medium">0</span><button onclick="increaseAddon('Mix-Medium', 3000)">+</button></div></div>
+    <div class="product"><p>Mix - Large</p><p>Rp5.000</p><div class="qty-controls"><button onclick="decreaseAddon('Mix-Large')">-</button><span id="addon-Mix-Large">0</span><button onclick="increaseAddon('Mix-Large', 5000)">+</button></div></div>    
+  </div>
+  </div>
+
+  <h2>PILIHAN TOPPING</h2>
+  <form id="topping-form" style="margin-top: 10px;">
+    <div class="product" style="text-align: left;">
+      <label><input type="checkbox" name="topping" value="Saos Takoyaki"> Saos Takoyaki</label><br>
+      <label><input type="checkbox" name="topping" value="Saos Mayonise"> Saos Mayonise</label><br>
+      <label><input type="checkbox" name="topping" value="Saos Pedas"> Saos Pedas</label><br>
+      <label><input type="checkbox" name="topping" value="Dicampur"> Dicampur</label><br>
+      <label><input type="checkbox" name="topping" value="Dipisah"> Dipisah</label>
+    </div>
+  </form>
+
+  <h2>STATUS MEMBER</h2>
+  <form id="member-form" style="margin-top: 10px;">
+    <label><input type="checkbox" id="member-discount"> Kartu Member (Potongan Rp5.000)</label><br>
+    <label><input type="checkbox" id="member-free"> Kartu Member Free (Bonus 1x item)</label>
+  </form>
+
+  <div class="cart">
+    <h2>RINCIAN PESANAN</h2>
+    <div id="cart-items"></div>
+    <p class="total">Total: Rp<span id="total">0</span></p>
+  </div>
+
+  <div class="payment">
+    <h2>PEMBAYARAN</h2>
+    <button onclick="simpanDanBayar('Tunai')">Bayar Tunai</button>
+    <button onclick="simpanDanBayar('QRIS')">Bayar QRIS</button>
+    <button onclick="cancelOrder()" style="background-color:#f44336;">Batal</button>
+  </div>
+</main>
+<script src="js/main-inputmenu.js"></script>
+</body>
+</html>

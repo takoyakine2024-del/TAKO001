@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="css/style-riwayattransaksi.css">
+  <meta charset="UTF-8">
+  <title>Riwayat Transaksi - TAKOYAKI NE</title>
+</head>
+<body>
+<main>
+  <h1>Riwayat Transaksi</h1>
+
+  <div class="filter-container">
+    <label>Tanggal Awal: <input type="date" id="startDate"></label>
+    <label>Tanggal Akhir: <input type="date" id="endDate"></label>
+    <label>Cari Nomor Transaksi: <input type="text" id="searchInput" placeholder="Contoh: TX00123"></label>
+    <button onclick="applyFilter()">Terapkan Filter</button>
+    <button onclick="resetFilter()">Reset</button>
+    <button onclick="exportToExcel()" class="export-btn">Ekspor ke Excel</button>
+    <button onclick="window.location.href='inputmenu.html'" class="back-btn">Kembali ke Kasir</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tanggal</th>
+        <th>Nomor Transaksi</th>
+        <th>Total</th>
+        <th>Jenis Pembayaran</th>
+        <th>Aksi</th>
+        <th>Detail Struk</th>
+      </tr>
+    </thead>
+    <tbody id="riwayat-body"></tbody>
+  </table>
+
+<div id="summary" style="margin-top: 20px;">
+  <p><strong>Total Semua Transaksi:</strong> Rp<span id="totalAll">0</span></p>
+  <p><strong>Total Tunai:</strong> Rp<span id="totalTunai">0</span></p>
+  <p><strong>Total QRIS:</strong> Rp<span id="totalQRIS">0</span></p>
+</div>
+
+</main>
+<script src="js/main-riwayattransaksi.js"></script>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
+
+</body>
+</html>

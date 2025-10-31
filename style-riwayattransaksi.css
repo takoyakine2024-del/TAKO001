@@ -1,0 +1,88 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffbe6;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff9800;
+    }
+
+    .filter-container {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    input[type="date"], input[type="text"] {
+      padding: 6px;
+      font-size: 14px;
+    }
+
+    button, .back-btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .back-btn:hover, button:hover {
+      background-color: #45a049;
+    }
+
+    .export-btn {
+      background-color: #2196f3;
+    }
+
+    .print-btn {
+      background-color: #ff9800;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .print-btn:hover {
+      background-color: #fb8c00;
+    }
+
+    .delete-btn {
+      background-color: #f44336;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #ffd700;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      margin: 0;
+    }
