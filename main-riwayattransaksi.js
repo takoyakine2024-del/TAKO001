@@ -3,14 +3,16 @@
   import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
 
   const firebaseConfig = {
-    apiKey: "AIzaSyAymJgXOk_4zyK-7NfWdSDEvJaBIWW4uGo",
-    authDomain: "takoyaki001-55b88.firebaseapp.com",
-    projectId: "takoyaki001-55b88",
-    storageBucket: "takoyaki001-55b88.appspot.com",
-    messagingSenderId: "81459383590",
-    appId: "1:81459383590:web:ae4089b9e169cd840705e7",
-    measurementId: "G-PM3T1L05JS"
-  };
+  apiKey: "AIzaSyAymJgXOk_4zyK-7NfWdSDEvJaBIWW4uGo",
+  authDomain: "takoyaki001-55b88.firebaseapp.com",
+  databaseURL: "https://takoyaki001-55b88-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "takoyaki001-55b88",
+  storageBucket: "takoyaki001-55b88.firebasestorage.app",
+  messagingSenderId: "81459383590",
+  appId: "1:81459383590:web:ae4089b9e169cd840705e7",
+  measurementId: "G-PM3T1L05JS"
+};
+
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
@@ -167,3 +169,4 @@
   // Render awal
   ambilDariFirebase();
 </script>
+
