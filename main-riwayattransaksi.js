@@ -1,6 +1,6 @@
 <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-  import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+ import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
   const firebaseConfig = {
   apiKey: "AIzaSyAymJgXOk_4zyK-7NfWdSDEvJaBIWW4uGo",
@@ -14,8 +14,8 @@
 };
 
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+ const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
   let data = [];
 
@@ -169,4 +169,5 @@
   // Render awal
   ambilDariFirebase();
 </script>
+
 
